@@ -1,6 +1,6 @@
 ﻿{
   "name": "cook-code-jazor-qrcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "生成二维码，由jQuery二维码插件改造",
   "keywords": [
     "qrcode"
@@ -8,6 +8,7 @@
   "license": "UNLICENSED",
   "main": "./index.js",
   "dependencies": {
+    "jazor-base64": "1.0.0",
     "cook-code-jazor-encoding": "1.0.0"
   },
   "scripts": {
