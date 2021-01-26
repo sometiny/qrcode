@@ -1,5 +1,5 @@
 {
-  "name": "cook-code-jazor-qrcode",
+  "name": "jazor-qrcode",
   "version": "1.0.2",
   "description": "生成二维码，由jQuery二维码插件改造",
   "keywords": [
