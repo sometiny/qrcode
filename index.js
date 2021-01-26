@@ -21,7 +21,7 @@
 //	http://www.denso-wave.com/qrcode/faqpatent-e.html
 //
 //---------------------------------------------------------------------
-const Utf8 = require('cook-code-jazor-encoding').utf8;
+const Utf8 = require('jazor-encoding').utf8;
 const Base64 = require('jazor-base64');
 var $qrcode = function() {
 	//---------------------------------------------------------------------
