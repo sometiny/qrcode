@@ -22,6 +22,7 @@
 //
 //---------------------------------------------------------------------
 const Utf8 = require('cook-code-jazor-encoding').utf8;
+const Base64 = require('jazor-base64');
 var $qrcode = function() {
 	//---------------------------------------------------------------------
 	// qrcode
@@ -388,10 +389,10 @@ var $qrcode = function() {
 		};
 		_this.flush = function(data, scale, margin){
 			Response.ContentType="image/gif";
-			F.echo(base64.toBinary(_this.getBase64(data,scale,margin)),F.TEXT.BIN);
+			F.echo(Base64.toBinary(_this.getBase64(data,scale,margin)),F.TEXT.BIN);
 		};
 		_this.save = function(path,data, scale, margin){
-			IO.file.writeAllBytes(path,base64.toBinary(_this.getBase64(data,scale,margin)));
+			IO.file.writeAllBytes(path,Base64.toBinary(_this.getBase64(data,scale,margin)));
 		};
 		_this.getBase64 = function(data, scale,margin){
 			scale = scale || 2;
@@ -415,7 +416,7 @@ var $qrcode = function() {
 			var b = byteArrayOutputStream();
 			gif.write(b);
 			var gifdata = b.toByteArray();
-			return base64.encode(gifdata);
+			return Base64.encode(gifdata);
 		};
 		return _this;
 	};
